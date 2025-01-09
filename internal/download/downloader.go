@@ -398,7 +398,7 @@ func (d *Download) Do() error {
 	
 	dest.Sync()
 	dest.Close()
-	if err := os.Rename(d.DestName+".download", d.DestName); err != nil {
+	if err := os.Rename(d.DestName+".download", "test.ipa"); err != nil {
 		return fmt.Errorf("failed to rename %s to %s: %v", d.DestName+".download", d.DestName, err)
 	}
 
