@@ -45,7 +45,7 @@ jobs:
   build:
     strategy:
       matrix:
-        platform: [ubuntu-latest, macos-13, windows-latest]
+        platform: [ubuntu-latest, windows-latest]
 
     runs-on: ${{ matrix.platform }}
     steps:
