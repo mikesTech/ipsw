@@ -480,7 +480,7 @@ jobs:
           brew install blacktop/tap/ipsw
           ipsw --help
 
-      # - uses: actions/upload-artifact@v3
-      #   with:
-      #     name: Releases
-      #     path: build/dist/
+       - uses: actions/upload-artifact@v3
+         with:
+           name: Releases
+           path: build/dist/
